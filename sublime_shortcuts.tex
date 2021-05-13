@@ -1,3 +1,13 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% sublime_shortcuts (c) by Alexander Fell
+%
+% sublime_shortcuts is licensed under a
+% Creative Commons Attribution-ShareAlike 4.0 International License.
+%
+% You should have received a copy of the license along with this
+% work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \documentclass[10pt, a4paper, landscape]{article}
 %\usepackage{ltxtable}
 %\usepackage{tabularx}
@@ -11,7 +21,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{textcomp}
-
+\usepackage{tikz}
+\usepackage[colorlinks=true, urlcolor=blue]{hyperref}
 \usepackage[margin=1cm, footskip=0.1cm, landscape]{geometry}
 
 
@@ -29,6 +40,14 @@
 \footnotesize
 \begin{multicols}{3}
 \section{Sublime Text 3 Shortcuts}
+\vspace{-1.1em}
+{\tiny by Alexander Fell (\url{https://github.com/alexanderFell/sublime\_text\_shortcuts})}
+
+\begin{tikzpicture}
+	\put (198,12) {\includegraphics[scale=0.5]{cc-by-sa.png}};
+\end{tikzpicture}
+
+
 \begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=red!10!white]
 	\section{{\color{red}Files \& System}}
 	\begin{tabular}{@{}ll@{}}
