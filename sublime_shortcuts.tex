@@ -1,0 +1,209 @@
+\documentclass[10pt, a4paper, landscape]{article}
+%\usepackage{ltxtable}
+%\usepackage{tabularx}
+%\usepackage{makecell}
+%\usepackage{colortbl}
+%\usepackage{longtable}
+\usepackage{multicol}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{tcolorbox}
+\usepackage[os=win]{menukeys}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{textcomp}
+
+\usepackage[margin=1cm, footskip=0.1cm, landscape]{geometry}
+
+
+%-- remove section numbering
+\makeatletter
+\renewcommand{\@seccntformat}[1]{}
+\makeatother
+
+\author{Alexander Fell}
+\date{\today}
+\title{Sublime Text 3 Shortcuts}
+
+\begin{document}
+
+\footnotesize
+\begin{multicols}{3}
+\section{Sublime Text 3 Shortcuts}
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=red!10!white]
+	\section{{\color{red}Files \& System}}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + O}										& Open File \\
+		\keys{\ctrl + S}										& Save File \\
+		\keys{\ctrl + W}										& Close File \\
+		\keys{\ctrl + \shift + T}								& Open recently closed file \\
+		\keys{\ctrl + KB} 										& Toggle sidebar \\
+		\keys{\ctrl + \Alt + P}									& Switch project \\
+		\keys{\ctrl + -}, \keys{\ctrl + {\sffamily+}} 			& Font size \\
+		\keys{\ctrl + \shift + P}								& Command palette \\
+		\keys{\ctrl + \Alt + C}									& Toggle console \\
+		\keys{F11}												& Fullscreen \\
+		\keys{\shift + F11}										& Distraction free fullscreen\\
+		\keys{\Alt + Number}									& Change tab\\
+		\keys{\ctrl + PageUp/Down}								& Navigate through tabs\\
+		\keys{\ctrl + \space}									& Show autocomplete suggestions\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=OliveGreen!10!white]
+	\section{\color{OliveGreen}Layout}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\Alt + number}									& Select tab\\
+		\keys{\Alt + \shift + (1-4)}							& Select column layouts \\
+		\keys{\Alt + \shift + 5}								& Select 4 grid layout\\
+		\keys{\Alt + \shift + 8/9}								& Select two/three row layouts\\
+		\keys{\ctrl + number} 									& Move to panel\\
+		\keys{\ctrl + \shift + number} 							& Move file to panel\\
+		\keys{\ctrl + K(1-9)}									& Fold by level 1-9\\
+		\keys{\ctrl + k0}										& reset folding\\
+		\keys{\ctrl + \shift + [/]}								& Fold/Unfold block
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=blue!10!white]
+	\section{\color{blue}Search}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + F} 										& Find, then in search bar:\\
+		\hspace{2em}\keys{\Alt + C}								& \hspace{2em}toggle case sensitive\\
+		\hspace{2em}\keys{\Alt + R}								& \hspace{2em}toggle regex\\
+		\hspace{2em}\keys{\Alt + W}								& \hspace{2em}toggle whole word\\
+		\keys{\ctrl + \shift + F} 								& Find in files\\
+		\keys{\ctrl + H} 										& Find and replace\\
+		\keys{\ctrl + I} 										& Incremental search\\
+		\keys{\tab} 											& Navigate through the search panel\\
+		\keys{\esc}												& Close search\\
+		\keys{\ctrl + P} 										& Go to anything\\
+		\keys{\ctrl + G} 										& Go to line number\\
+		\keys{\ctrl + R} 										& Go to symbol\\
+		\keys{\ctrl + ;}	 									& Go to word\\
+		\keys{\return}, \keys{F3} 								& Find next\\
+		\keys{\shift + \return}, \keys{\shift + F3}				& Find previous\\
+		\keys{Alt + F3}											& Find all\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=magenta!10!white]
+	\section{\color{magenta}Selections/Moving Around}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + \arrowkeyleft/\arrowkeyright}				& Jump words/characters\\
+		\keys{\ctrl + \shift + \arrowkeyleft/\arrowkeyright}   	& Moving around and selecting\\
+		\keys{\ctrl + M} 										& Go to closing/opening parenthesis\\
+		\keys{\ctrl + D} 										& Add next occurrence to selection\\
+		\keys{\ctrl + \shift + \space} 							& Add scope to selection\\
+		\keys{\Alt + F3} 										& Add all occurrences to selection\\
+		\keys{\ctrl + L}										& Select line\\
+		\hspace{2em}\keys{\ctrl + \shift + L}								& \hspace{2em}Enter multi-line edit mode\\
+		\keys{\ctrl + \shift + M}								& Select contents inside parenthesis\\
+		\keys{\ctrl + \shift + J} 								& Expand selection to indentation\\
+		\keys{\ctrl + \shift + A} 								& Expand selection to tag\\
+		\keys{\ctrl + K}\keys{\ctrl + C} 						& Scroll to selection\\
+		\includegraphics[width=0.6em]{right-click-of-the-mouse} %
+				 {\tiny+} \keys{\shift} 						& Draw selection with mouse\\
+		\includegraphics[width=0.6em]{right-click-of-the-mouse} %
+				 {\tiny+} \keys{\ctrl} 							& Add to mouse selection\\
+		\includegraphics[width=0.6em]{right-click-of-the-mouse} %
+				 {\tiny+} \keys{\Alt} 							& Subtract from mouse selection
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=BurntOrange!10!white]
+	\section{\color{BurntOrange}Multiple Cursors}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + \shift + L} 								& Split selection into lines\\
+		\keys{\ctrl + Alt + \arrowkeyup/\arrowkeydown}, %
+			\keys{\Alt + \shift + \arrowkeyup/\arrowkeydown} 	& Add new cursor\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=cyan!10!white]
+	\section{\color{cyan}Editing}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + C} 										& Copy line/selection\\
+		\keys{\ctrl + X} 										& Cut line/selection\\
+		\keys{\ctrl + V} 										& Paste\\
+		\keys{\ctrl + \shift + V} 								& Paste with indentation\\
+		\keys{\ctrl + K}\keys{V} 								& Paste from history\\
+		\keys{\ctrl + \shift + K} 								& Delete line\\
+		\keys{\ctrl + \del} 									& Delete word forward\\
+		\keys{\ctrl + \backspace} 								& Delete word backwards\\
+		\keys{\ctrl + \shift + \del} 							& Delete from cursor to end of line\\
+		\keys{\ctrl + \shift + \backspace} 						& Delete from cursor to beginning of line\\
+		\keys{\ctrl + \shift + D} 								& Duplicate line/selection\\
+		\keys{\ctrl + L} 										& Select line\\
+		\keys{\ctrl + \shift + \arrowkeyup/\arrowkeydown} 		& Move line up/down\\
+		\keys{\ctrl + \return}									& Insert line after\\
+		\keys{\ctrl + \shift + \return}							& Insert line before\\
+		\keys{\ctrl + J} 										& Join next line end of the current line\\
+		\keys{\ctrl + T} 										& Transpose\\
+		\keys{\ctrl + KU} 										& Uppercase\\
+		\keys{\ctrl + KL} 										& Lowercase\\
+		\keys{\ctrl + [/]} 										& Indent/Unindent lines\\
+		\keys{Alt + .}											& Close tag\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=SkyBlue!10!white]
+	\section{\color{SkyBlue}Commenting}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + /} 										& Comment line\\
+		\keys{\ctrl + \shift + /} 								& Block comment line\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=yellow!10!white]
+	\section{\color{yellow}Bookmarks}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + F2}										& Add/remove bookmark\\
+		\keys{F2}												& Go to next bookmark\\
+		\keys{\shift + F2}										& Go to previous bookmark\\
+		\keys{\Alt + F2}										& Select all bookmarks\\
+		\keys{\ctrl + \shift + F2}								& Clear bookmarks\\
+	\end{tabular}					
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=green!10!white]
+	\section{\color{green}Mark}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + K\Space} 									& Set mark\\
+		\keys{\ctrl + KX}										& Set new location\\
+		\keys{\ctrl + KA} 										& Select to mark\\
+		\keys{\ctrl + KW} 										& Delete to mark\\
+		\keys{\ctrl + KG} 										& Delete mark\\
+	\end{tabular}			
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=BrickRed!10!white]
+	\section{\color{BrickRed}Misc}
+	\begin{tabular}{@{}ll@{}}					
+		\keys{F6} 												& Toggle spell checking\\
+		\keys{\ctrl + F6}										& Find next misspelling\\
+		\keys{\ctrl + \shift + F6}								& Find previous misspelling\\
+		\keys{F9}												& Sort lines (case sensitive)\\
+		\keys{\shift + F9}										& Sort lines (case insensitive)\\
+		\keys{\ctrl + \textasciigrave}							& Toggle console\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=Black!10!white]
+	\section{\color{Black}Build}
+	\begin{tabular}{@{}ll@{}}					
+		\keys{\ctrl + B}, \keys{F7}								& Build\\
+		\keys{\ctrl + \shift + B}								& Build args\\
+		\keys{\ctrl + Break}									& Cancel Build\\
+		\keys{\ctrl + R}										& Show function list\\
+		\keys{F12}												& go to definition\\
+		\keys{\shift + F12}										& go to reference\\
+		\keys{\ctrl + \shift + R}								& go to symbol in project\\
+		\keys{\Alt + -}											& jump back\\
+		\keys{\Alt + \shift + -}								& jump forward\\
+		\keys{\Alt + /}											& autocomplete\\
+	\end{tabular}
+\end{tcolorbox}
+
+
+\end{multicols}
+\end{document}
