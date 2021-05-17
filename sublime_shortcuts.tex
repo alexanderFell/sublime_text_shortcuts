@@ -227,7 +227,73 @@
 		\keys{\shift + \tab}									& insert tab without auto complete\\
 	\end{tabular}
 \end{tcolorbox}
+\newpage
+\begin{multicols}{3}
+\section{Sublime Merge 3 Shortcuts}
+\vspace{-1.1em}
+{\tiny by Alexander Fell (\url{https://github.com/alexanderFell/sublime\_text\_shortcuts})}
+
+\begin{tikzpicture}
+	\put (198,12) {\includegraphics[scale=0.5]{cc-by-sa.png}};
+\end{tikzpicture}
 
 
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=red!10!white]
+	\section{{\color{red}Files \& System}}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + O}										& Open repository \\
+		\keys{\ctrl + \shift + O}								& Switch repository \\
+		\keys{\ctrl + T} 										& New tab\\
+		\keys{\ctrl + \shift + T}								& Reopen closed tab \\
+		\keys{\ctrl + W}										& Close tab \\
+		\keys{\ctrl + \shift + N} 								& New window \\
+		\keys{\ctrl + \shift + W}								& Close window \\
+		\keys{\ctrl + Q}										& Quit\\
+		\keys{\ctrl + \shift + P}								& Command palette \\
+		\keys{F11}												& Fullscreen \\
+		\keys{\ctrl + PageUp/Down}								& Navigate through tabs\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=OliveGreen!10!white]
+	\section{\color{OliveGreen}Repository}
+	%TODO: I could not get the footnotemark working somehow.
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + S}										& Stash\\
+		\keys{\ctrl + \shift + S}								& Pop stash \\
+		\keys{\ctrl + \Alt + \arrowkeydown},
+			\keys{Super + \shift + \arrowkeydown}$^a$			& Pull \\
+		\keys{Super + \arrowkeydown}$^a$						& Pull (rebase, autostash)\\
+		\keys{\ctrl + \Alt + \arrowkeyup},
+			\keys{Super + \shift + \arrowkeyup}$^a$				& Push\\
+		\keys{Super + F}$^a$									& Fetch\\
+		\keys{\ctrl + B} 										& Checkout branch\\
+		\keys{\ctrl + \shift + B} 								& Create new branch\\
+	\end{tabular}
+	\footnotetext[1]{Custom configuration}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=blue!10!white]
+	\section{\color{blue}Navigate}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\Alt + \arrowkeyleft}								& Go back\\
+		\keys{\Alt + \arrowkeyright}							& Go forward \\
+		\keys{\Alt + \arrowkeyup}								& Go to child\\
+		\keys{\Alt + \arrowkeydown}								& Go to parent \\
+		\keys{\ctrl + 9} 										& Go to commit changes\\
+		\keys{\ctrl + 0}		 								& Go to HEAD\\
+		\keys{\ctrl + R}		 								& Navigate to branch\\
+		\keys{\ctrl + F}		 								& Search\\
+	\end{tabular}
+\end{tcolorbox}
+
+\begin{tcolorbox}[boxrule=0pt,sharp corners,parbox=false,colback=BurntOrange!10!white]
+	\section{\color{BurntOrange}Tools}
+	\begin{tabular}{@{}ll@{}}
+		\keys{\ctrl + P}										& Command palette\\
+		\keys{\ctrl + \shift + H}								& Refresh\\
+		\keys{\ctrl + \textasciigrave}							& Toggle console\\
+	\end{tabular}
+\end{tcolorbox}
 \end{multicols}
 \end{document}
