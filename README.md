@@ -1,8 +1,14 @@
 # sublime_text_shortcuts
-This repository contains the LaTeX files to create a table of shortcuts for Sublime Text 3.
+This repository contains the LaTeX files to create a table of shortcuts for Sublime Text 3 and Sublime Merge.
+
+## Screenshots
+![Sublime Text 3 Shortcuts Screenshot](https://github.com/alexanderFell/sublime_text_shortcuts/blob/assets/sublime_shortcuts_screenshot1.png)
+
+![Sublime Merge 3 Shortcuts Screenshot](https://github.com/alexanderFell/sublime_text_shortcuts/blob/assets/sublime_shortcuts_screenshot2.png)
+
 
 ## Download
-A PDF version is available [here](https://www.fell.it/sublime_shortcuts.pdf).
+A PDF version is available [here](https://github.com/alexanderFell/sublime_text_shortcuts/blob/assets/sublime_shortcuts.pdf).
 
 ## License
 This work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
